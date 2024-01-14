@@ -5,7 +5,7 @@ import smoothScrollTo from "../SmoothScrolling";
 
 
 function Landing() {
-    const thingsIAm = ["Full-stack Software Developer", "Hobbyist Game Developer", "Guitar Lover", "Tea Drinker", "Rock Fan 🤘"];
+    const thingsIAm = ["Full-stack Developer", "Hobbyist Game Developer", "Guitar Lover", "Tea Drinker", "Rock Fan 🤘"];
     const [thingIndex, setThingIndex] = useState(0);
 
     const incrementThing = () => {
