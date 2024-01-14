@@ -30,3 +30,18 @@ html, body, #root {
 .cardHeading {
   font-family:'Roboto Mono', monospace !important;
 }
+
+.particle {
+  position: fixed;
+  color: green;
+  user-select: none;
+  pointer-events: none;
+  font-family: 'Courier New', monospace;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh) scale(0);
+    opacity: 0;
+  }
+}
