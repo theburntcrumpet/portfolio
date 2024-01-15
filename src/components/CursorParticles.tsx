@@ -7,7 +7,7 @@ const CursorParticles: React.FC = () => {
     const particle = document.createElement("span");
     particle.classList.add("particle");
     particle.textContent = particleStrings[Math.floor(particleStrings.length * Math.random())];
-    particle.textContent = Math.random() < 0.005 ? "Hire Him!" : particle.textContent;
+    // particle.textContent = Math.random() < 0.005 ? "Hire Him!" : particle.textContent;
     particle.style.left = `${x}px`;
     particle.style.top = `${y}px`;
 

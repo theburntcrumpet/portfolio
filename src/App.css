@@ -1,21 +1,16 @@
-html, body, #root {
-
-}
-
 .typewriter {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
   animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
-  /* The first value of the 'steps()' function should match the number of characters in your text */
   font-family: 'Roboto Mono', monospace;
 }
 
 @keyframes typing {
   0% { width: 0; }
-  80% { width: 100%; } /* Animation completes at 90% */
-  100% { width: 100%; } /* Holds the final state for the last 10% */
+  80% { width: 100%; }
+  100% { width: 100%; }
 }
 
 .nameHeading {
@@ -24,7 +19,7 @@ html, body, #root {
 }
 
 .cardContent p {
-  margin-bottom: 16px; /* Adjust as needed */
+  margin-bottom: 16px;
 }
 
 .cardHeading {
