@@ -11,7 +11,7 @@ const CursorParticles: React.FC = () => {
     particle.style.left = `${x}px`;
     particle.style.top = `${y}px`;
 
-    const animationDuration = Math.random() * 6 + 3;
+    const animationDuration = Math.random() * 3 + 2;
     particle.style.animation = `fall ${animationDuration}s linear`;
 
     document.getElementById("particle-container")?.appendChild(particle);
