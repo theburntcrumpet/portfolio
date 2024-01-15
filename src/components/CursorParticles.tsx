@@ -18,7 +18,7 @@ const CursorParticles: React.FC = () => {
 
     particleContainer.appendChild(particle);
 
-    setTimeout(() => particle.remove(), animationDuration * 1000);
+    setTimeout(() => particle.remove(), animationDuration * 950);
   };
 
   useEffect(() => {
