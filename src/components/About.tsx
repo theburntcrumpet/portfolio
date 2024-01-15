@@ -11,13 +11,13 @@ function About() {
                 <Heading className="cardHeading" color="green.200">About Me</Heading>
                 <Box marginLeft="4em" marginRight={"4em"}>
                     <Wrap justify="center" spacing="1em">
-                        <WrapItem width={{ base: "100%", md: "calc(33.333% - 30px)" }}>
+                        <WrapItem width={{ base: "100%", md: "calc(33.333% - 30px)" }} minH="70vh">
                             <Background/>
                         </WrapItem>
-                        <WrapItem width={{ base: "100%", md: "calc(33.333% - 30px)" }}>
+                        <WrapItem width={{ base: "100%", md: "calc(33.333% - 30px)" }} minH="70vh">
                             <Now/>
                         </WrapItem>
-                        <WrapItem width={{ base: "100%", md: "calc(33.333% - 30px)" }}>
+                        <WrapItem width={{ base: "100%", md: "calc(33.333% - 30px)" }} minH="70vh">
                             <Next/>
                         </WrapItem>
                     </Wrap>

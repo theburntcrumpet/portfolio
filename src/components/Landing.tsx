@@ -10,7 +10,6 @@ function Landing() {
 
     const incrementThing = () => {
         const nextIndex = thingIndex + 1;
-        // Corrected the condition to cycle through the array
         if (nextIndex >= thingsIAm.length) {
             setThingIndex(0);
         } else {
@@ -28,7 +27,6 @@ function Landing() {
                         </div>
                     </Heading>
                     <Text fontSize="xl" textAlign={"center"} color={"green.100"}>
-                        {/* Added a key that changes with each item */}
                         <div key={thingIndex} className="typewriter" onAnimationEnd={incrementThing}>
                             {thingsIAm[thingIndex]}
                         </div>

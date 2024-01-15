@@ -3,16 +3,18 @@ import React, { useEffect } from "react";
 
 const CursorParticles: React.FC = () => {
   const createParticle = (x: number, y: number) => {
+    const particleStrings = ["0", "1"];
     const particle = document.createElement("span");
     particle.classList.add("particle");
-    particle.textContent = Math.random() > 0.5 ? "0" : "1";
+    particle.textContent = particleStrings[Math.floor(particleStrings.length * Math.random())];
+    particle.textContent = Math.random() < 0.005 ? "Hire Him!" : particle.textContent;
     particle.style.left = `${x}px`;
     particle.style.top = `${y}px`;
 
-    const animationDuration = Math.random() * 3 + 2; // 2 to 5 seconds
+    const animationDuration = Math.random() * 6 + 3;
     particle.style.animation = `fall ${animationDuration}s linear`;
 
-    document.body.appendChild(particle);
+    document.getElementById("particle-container")?.appendChild(particle);
 
     setTimeout(() => particle.remove(), animationDuration * 1000);
   };
