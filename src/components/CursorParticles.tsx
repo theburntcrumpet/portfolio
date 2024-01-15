@@ -3,6 +3,8 @@ import React, { useEffect } from "react";
 
 const CursorParticles: React.FC = () => {
   const createParticle = (x: number, y: number) => {
+    const particleContainer = document.getElementById("particle-container");
+    if(!particleContainer) return ; // only continue to spawn if the particle container is rendered
     const particleStrings = ["0", "1"];
     const particle = document.createElement("span");
     particle.classList.add("particle");
@@ -14,7 +16,7 @@ const CursorParticles: React.FC = () => {
     const animationDuration = Math.random() * 3 + 2;
     particle.style.animation = `fall ${animationDuration}s linear`;
 
-    document.getElementById("particle-container")?.appendChild(particle);
+    particleContainer.appendChild(particle);
 
     setTimeout(() => particle.remove(), animationDuration * 1000);
   };
